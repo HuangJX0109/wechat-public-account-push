@@ -89,6 +89,38 @@ const USER_CONFIG = {
         { keyword: 'marry_day', date: '2022-09-09' },
       ], 
     },
+    {
+      // 想要发送的人的名字
+      name: '小峰',
+      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: 'oYgNi6ftp-XClzlGzpN4zGbRO57M',
+      // 使用微信测试号：你想对他发送的模板消息的模板ID
+      useTemplateId: 'fax77c9q2qR_TorA_jKqB8QjM5vfbVCikkbYTqZAb-8',
+      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      horoscopeDate: '03-30',
+      // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
+      horoscopeDateType: '今日',
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {
+          type: '*生日', name: '小峰', year: '1998', date: '03-03',
+        },
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {
+          type: '生日', name: '小峰', year: '2024', date: '04-11',
+        },
+        {
+          type: '节日', name: '相识纪念日', year: '2023', date: '05-03',
+        },
+      ],
+      // 我们在一起已经有xxxx天了的配置
+      customizedDateList: [
+        // 在一起的日子
+        { keyword: 'love_day', date: '2022-09-08' },
+        // 结婚纪念日
+        { keyword: 'marry_day', date: '2022-09-09' },
+      ], 
+    },
   ],
 
 
